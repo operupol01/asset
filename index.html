@@ -1,0 +1,358 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Мой сайт — Главная</title>
+  <meta name="description" content="Главная страница блога — последние посты и новости">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="/">Мой блог</a></h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="contact.html">Контакты</a>
+        <a href="partners.html">Партнёры</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Добро пожаловать в мой блог</h2>
+      <p>Здесь я делюсь мыслями, заметками и проектами.</p>
+    </section>
+
+    <!-- New Featured Block -->
+    <section class="featured-block" style="padding:40px 0; text-align:center; background:linear-gradient(135deg,#f9f9f9,#e9eef5); border-radius:20px; margin:30px 0; box-shadow:0 6px 20px rgba(0,0,0,0.08);">
+      <div class="container" style="max-width:800px;">
+        <h2 style="font-size:2.2rem; margin-bottom:15px;">Добро пожаловать в мой мир идей</h2>
+        <p style="font-size:1.15rem; color:#333; margin-bottom:25px; line-height:1.6;">
+          Здесь я делюсь мыслями, проектами и вдохновением. Исследую технологии, творчество и жизнь вокруг.
+        </p>
+        <a href="about.html" style="display:inline-block; padding:14px 26px; background:#111; color:#fff; text-decoration:none; border-radius:12px; font-size:1rem; transition:0.3s;">Узнать обо мне</a>
+      </div>
+    </section>
+    <!-- end featured block -->
+
+    <section class="posts">
+      <article class="post-preview">
+        <h3><a href="post-01.html">Пост 1 — Название статьи</a></h3>
+        <p class="meta">Опубликовано: 25 ноября 2025</p>
+        <p>Короткое описание первой заметки — интригующий анонс, который мотивирует перейти по ссылке.</p>
+      </article>
+
+      <article class="post-preview">
+        <h3><a href="post-02.html">Пост 2 — Ещё одна заметка</a></h3>
+        <p class="meta">Опубликовано: 12 ноября 2025</p>
+        <p>Короткое описание второй заметки — идея, проект или обзор.</p>
+      </article>
+
+      <article class="post-preview">
+        <h3><a href="post-03.html">Пост 3 — История/Руководство</a></h3>
+        <p class="meta">Опубликовано: 1 ноября 2025</p>
+        <p>Короткое описание третьей заметки — руководство или рассказ.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Мой блог. Все права защищены.</p>
+      <p><a href="contact.html">Связаться</a> · <a href="partners.html">Партнёры</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+<!-- FILE: post-01.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Пост 1 — Название статьи</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Мой блог</a></h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="contact.html">Контакты</a>
+        <a href="partners.html">Партнёры</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container post-page">
+    <article>
+      <h2>Пост 1 — Название статьи</h2>
+      <p class="meta">Автор: Иван Иванов · 25 ноября 2025</p>
+
+      <p>Здесь размещён полный текст первой статьи. Добавьте содержимое, изображения, цитаты и код по желанию.</p>
+
+      <h3>Подзаголовок</h3>
+      <p>Дополнительный абзац с информацией или разъяснениями.</p>
+
+    </article>
+
+    <aside class="related">
+      <h4>Другие посты</h4>
+      <ul>
+        <li><a href="post-02.html">Пост 2 — Ещё одна заметка</a></li>
+        <li><a href="post-03.html">Пост 3 — История/Руководство</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> Мой блог.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+<!-- FILE: post-02.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Пост 2 — Ещё одна заметка</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Мой блог</a></h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="contact.html">Контакты</a>
+        <a href="partners.html">Партнёры</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container post-page">
+    <article>
+      <h2>Пост 2 — Ещё одна заметка</h2>
+      <p class="meta">Автор: Иван Иванов · 12 ноября 2025</p>
+
+      <p>Содержимое второй статьи. Можно вставить изображения и блоки с кодом.</p>
+    </article>
+
+    <aside class="related">
+      <h4>Другие посты</h4>
+      <ul>
+        <li><a href="post-01.html">Пост 1 — Название статьи</a></li>
+        <li><a href="post-03.html">Пост 3 — История/Руководство</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> Мой блог.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+<!-- FILE: post-03.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Пост 3 — История/Руководство</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Мой блог</a></h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="contact.html">Контакты</a>
+        <a href="partners.html">Партнёры</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container post-page">
+    <article>
+      <h2>Пост 3 — История/Руководство</h2>
+      <p class="meta">Автор: Иван Иванов · 1 ноября 2025</p>
+
+      <p>Материал третьей статьи: подробное руководство или рассказ.</p>
+    </article>
+
+    <aside class="related">
+      <h4>Другие посты</h4>
+      <ul>
+        <li><a href="post-01.html">Пост 1 — Название статьи</a></li>
+        <li><a href="post-02.html">Пост 2 — Ещё одна заметка</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year4"></span> Мой блог.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+<!-- FILE: about.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Обо мне</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Мой блог</a></h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="contact.html">Контакты</a>
+        <a href="partners.html">Партнёры</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>О владельце блога</h2>
+    <p>Привет! Меня зовут Иван. Я увлекаюсь веб-разработкой, фотографией и путешествиями. Здесь я публикую заметки о проектах, опыте и интересных находках.</p>
+
+    <h3>Увлечения</h3>
+    <ul>
+      <li>Веб-разработка</li>
+      <li>Фотография</li>
+      <li>Путешествия</li>
+      <li>Книги и обучение</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year5"></span> Мой блог.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year5').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+<!-- FILE: contact.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Мой блог</a></h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="contact.html">Контакты</a>
+        <a href="partners.html">Партнёры</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Контакты</h2>
+    <p>Почта: <a href="mailto:ivan@example.com">ivan@example.com</a></p>
+    <p>Телефон: +7 (777) 123-45-67</p>
+
+    <h3>Форма обратной связи</h3>
+    <form action="#" method="post" class="contact-form">
+      <label>Ваше имя<br><input type="text" name="name" required></label><br>
+      <label>Почта<br><input type="email" name="email" required></label><br>
+      <label>Сообщение<br><textarea name="message" rows="6" required></textarea></label><br>
+      <button type="submit">Отправить</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year6"></span> Мой блог.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year6').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+<!-- FILE: partners.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Партнёры</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Мой блог</a></h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="contact.html">Контакты</a>
+        <a href="partners.html">Партнёры</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Друзья и партнёры</h2>
+    <ul class="partners-list">
+      <li><a href="https://example.com" target="_blank" rel="noopener">Example — сайт-партнёр</a></li>
+      <li><a href="https://example.org" target="_blank" rel="noopener">Example.org — друг проекта</a></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year7"></span> Мой блог.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year7').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+

@@ -1,0 +1,38 @@
+<!-- FILE: partners.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Партнёры</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Мой блог</a></h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="contact.html">Контакты</a>
+        <a href="partners.html">Партнёры</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Друзья и партнёры</h2>
+    <ul class="partners-list">
+      <li><a href="https://example.com" target="_blank" rel="noopener">Example — сайт-партнёр</a></li>
+      <li><a href="https://example.org" target="_blank" rel="noopener">Example.org — друг проекта</a></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year7"></span> Мой блог.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year7').textContent = new Date().getFullYear();</script>
+</body>
+</html>

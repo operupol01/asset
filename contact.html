@@ -1,0 +1,44 @@
+<!-- FILE: contact.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Мой блог</a></h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="contact.html">Контакты</a>
+        <a href="partners.html">Партнёры</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Контакты</h2>
+    <p>Почта: <a href="mailto:ivan@example.com">ivan@example.com</a></p>
+    <p>Телефон: +7 (777) 123-45-67</p>
+
+    <h3>Форма обратной связи</h3>
+    <form action="#" method="post" class="contact-form">
+      <label>Ваше имя<br><input type="text" name="name" required></label><br>
+      <label>Почта<br><input type="email" name="email" required></label><br>
+      <label>Сообщение<br><textarea name="message" rows="6" required></textarea></label><br>
+      <button type="submit">Отправить</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year6"></span> Мой блог.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year6').textContent = new Date().getFullYear();</script>
+</body>
+</html>
