@@ -1,40 +1,42 @@
-/* ---------- VARIABLES ---------- */
+/* ------------------------------------
+   DARK LUXURY THEME — VARIABLES
+------------------------------------ */
 :root{
-  --bg:#f4f6fb;
-  --bg-card:#ffffff;
-  --text:#1a1f2c;
-  --muted:#7d8596;
-  --brand:#6366f1;
-  --brand-dark:#4f46e5;
+  --bg:#0d0f17;             /* Основной фон */
+  --bg-card:#151822;        /* Карточки */
+  --text:#f2f4ff;           /* Текст */
+  --muted:#8b92a7;          /* Вторичный текст */
+  --brand:#6366f1;          /* Фиолетовый акцент */
+  --brand-glow:#7d81ff;     /* Светящийся акцент */
   --radius:16px;
-  --shadow-soft:0 10px 25px rgba(0,0,0,0.06);
+  --shadow-soft:0 12px 35px rgba(0,0,0,0.45);
 }
 
-/* ---------- BASE ---------- */
+/* ------------------------------------
+   RESET / BASE
+------------------------------------ */
 *{margin:0;padding:0;box-sizing:border-box}
 body{
-  font-family:Inter,Arial,sans-serif;
   background:var(--bg);
   color:var(--text);
+  font-family:Inter,system-ui,sans-serif;
   line-height:1.6;
 }
-a{text-decoration:none;color:inherit}
+a{text-decoration:none;color:inherit;transition:.25s}
+.container{max-width:1100px;margin:auto;padding:20px}
 
-/* ---------- LAYOUT ---------- */
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
-}
-
-/* ---------- HEADER ---------- */
+/* ------------------------------------
+   HEADER (GLASS + GLOW)
+------------------------------------ */
 .site-header{
-  background:rgba(255,255,255,0.6);
-  backdrop-filter:blur(10px);
-  padding:15px 0;
-  border-bottom:1px solid rgba(255,255,255,0.4);
+  background:rgba(21,24,34,0.65);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  padding:16px 0;
   position:sticky;
   top:0;
+  z-index:100;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 .site-header .container{
   display:flex;
@@ -42,62 +44,80 @@ a{text-decoration:none;color:inherit}
   align-items:center;
 }
 .logo a{
+  font-size:1.35rem;
   font-weight:700;
-  font-size:1.3rem;
-  color:var(--brand-dark);
+  color:var(--brand-glow);
+  text-shadow:0 0 12px rgba(99,102,241,0.6);
 }
+
 .main-nav{
   display:flex;
-  gap:12px;
+  gap:14px;
 }
 .main-nav a{
   padding:8px 14px;
   border-radius:var(--radius);
   color:var(--muted);
-  font-weight:500;
   transition:0.25s;
 }
 .main-nav a:hover{
-  background:rgba(99,102,241,0.1);
-  color:var(--brand);
-  transform:translateY(-2px);
+  background:rgba(99,102,241,0.15);
+  color:var(--brand-glow);
+  box-shadow:0 0 10px rgba(99,102,241,0.5);
 }
 
-/* ---------- MAIN CONTENT CARD ---------- */
+/* ------------------------------------
+   MAIN CONTENT CARD
+------------------------------------ */
 main{
   background:var(--bg-card);
-  padding:30px;
+  padding:32px;
   border-radius:var(--radius);
-  margin-top:30px;
   box-shadow:var(--shadow-soft);
+  margin-top:30px;
+  border:1px solid rgba(255,255,255,0.05);
 }
 main h2{
-  font-size:2rem;
-  margin-bottom:12px;
+  font-size:2.1rem;
+  margin-bottom:14px;
+  color:var(--brand-glow);
+  text-shadow:0 0 12px rgba(99,102,241,0.35);
 }
 main h3{
-  font-size:1.4rem;
-  margin-top:24px;
+  font-size:1.5rem;
+  margin-top:28px;
 }
 main p{
-  color:var(--text);
   margin-bottom:15px;
+  color:var(--muted);
 }
 ul{
   margin-top:12px;
   padding-left:20px;
 }
 ul li{
+  margin-bottom:8px;
   color:var(--muted);
-  margin-bottom:5px;
-  font-size:1rem;
 }
 
-/* ---------- FOOTER ---------- */
+/* ------------------------------------
+   FOOTER
+------------------------------------ */
 .site-footer{
-  text-align:center;
-  padding:20px 0;
   margin-top:40px;
+  padding:22px 0;
+  text-align:center;
+  font-size:.95rem;
   color:var(--muted);
-  font-size:0.95rem;
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+
+/* ------------------------------------
+   RESPONSIVE
+------------------------------------ */
+@media(max-width:600px){
+  .site-header .container{
+    flex-direction:column;
+    align-items:flex-start;
+  }
 }
